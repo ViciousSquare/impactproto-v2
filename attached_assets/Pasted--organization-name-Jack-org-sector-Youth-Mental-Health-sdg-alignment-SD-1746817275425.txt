@@ -1,0 +1,153 @@
+{
+  "organization_name": "Jack.org",
+  "sector": "Youth Mental Health",
+  "sdg_alignment": [
+    "SDG 3: Good Health and Well-being",
+    "SDG 4: Quality Education",
+    "SDG 10: Reduced Inequalities"
+  ],
+  "region": "Canada (National)",
+  "year_established": 2010,
+  "contact_info": "243 College Street, Suite 200, Toronto, ON, M5T 1R5, (416) 425-2494, hello@jack.org",
+  "website": "jack.org",
+  "best_contact": {
+    "name": "Vivien Glencross",
+    "email": "hello@jack.org",
+    "role": "Acting President & CEO"
+  },
+  "impact_iq_score": 87,
+  "grade": "A",
+  "reporting_quality": 19,
+  "reach": 18,
+  "est_social_roi": 4.5,
+  "outcome_effectiveness": 18,
+  "transparency_governance": 18,
+  "verification_level": "Self-Reported",
+  "methodology_source": "2024 Impact Report",
+  "methodology_summary": "Jack.org measures impact through program reach metrics, participant feedback surveys, and qualitative testimonials. They track youth engagement across their core programs (Jack Talks, Jack Chapters, Be There) and measure both immediate outputs and participant-reported outcomes.",
+  "reports_documents_used": [
+    {
+      "file_name": "Jack-final-AnnualmpactReport2024_UDPATED.pdf",
+      "type": "PDF",
+      "date": "2024-05-09"
+    }
+  ],
+  "key_statistics_kpis": [
+    "Over 26,000 people reached by Jack Talks with 94% finding the experience valuable",
+    "24,500+ Be There Certificate completions with 95% reporting increased confidence in supporting others",
+    "161 Jack Chapters empowered 2,200 youth leaders with 539 community initiatives",
+    "10,000+ educators accessing mental health resources through Educator Hub"
+  ],
+  "key_insights_about_org": [
+    "Leading Canadian organization in youth-led mental health movement",
+    "Strong focus on Indigenous youth through culturally-relevant programming",
+    "Celebrating 15 years with innovative peer-to-peer support models",
+    "Strategic focus on education, community-building, and policy advocacy"
+  ],
+  "programs": [
+    {
+      "name": "Jack Talks",
+      "people_reached": 26000,
+      "social_roi": "4.7x",
+      "score": "High Impact",
+      "effectiveness": "Mental health presentations delivered by trained youth speakers sharing personal stories to foster connection and normalize conversation",
+      "sdgs": ["SDG 3", "SDG 4"]
+    },
+    {
+      "name": "Jack Chapters",
+      "people_reached": 120000,
+      "social_roi": "4.5x",
+      "score": "High Impact",
+      "effectiveness": "161 youth-led groups working year-round to break down barriers to positive mental health in their communities",
+      "sdgs": ["SDG 3", "SDG 10"]
+    },
+    {
+      "name": "Be There Certificate",
+      "people_reached": 24500,
+      "social_roi": "4.3x",
+      "score": "High Impact",
+      "effectiveness": "Award-winning digital resource teaching users how to support peers through mental health struggles",
+      "sdgs": ["SDG 3", "SDG 4"]
+    },
+    {
+      "name": "Educator Hub",
+      "people_reached": 10000,
+      "social_roi": "4.0x",
+      "score": "Medium-High Impact",
+      "effectiveness": "Resources for educators to foster open conversation and build students' mental health awareness and help-seeking skills",
+      "sdgs": ["SDG 3", "SDG 4"]
+    },
+    {
+      "name": "Jack Talks for Indigenous Youth",
+      "people_reached": 2000,
+      "social_roi": "4.8x",
+      "score": "High Impact",
+      "effectiveness": "Specialized talks designed by and for Indigenous youth, including culturally-relevant mental health essentials and sharing circles",
+      "sdgs": ["SDG 3", "SDG 10"]
+    }
+  ],
+  "key_target_members_partners": [
+    {
+      "name": "Lawson Foundation",
+      "type": "Foundation",
+      "role": "Lead Be There Partner"
+    },
+    {
+      "name": "Pinterest",
+      "type": "Corporate",
+      "role": "Lead Jack Chapters Partner"
+    },
+    {
+      "name": "Canada Summer Jobs (Service Canada)",
+      "type": "Government",
+      "role": "Transformational Partner"
+    },
+    {
+      "name": "Maison Simons",
+      "type": "Corporate",
+      "role": "Visionary Partner"
+    },
+    {
+      "name": "Ministry of Francophone Affairs (Government of Ontario)",
+      "type": "Government",
+      "role": "Program Partner"
+    }
+  ],
+  "admin_notes": "Strong candidate for featured status due to national reach, innovative youth-led approach, and 15-year track record of impact",
+  "impact_analysis": {
+    "executive_summary": "Jack.org demonstrates significant impact in youth mental health through their innovative youth-led approach. Their three core programs (Jack Talks, Jack Chapters, Be There) combined with newer initiatives like the Educator Hub and Indigenous youth programming have successfully reached hundreds of thousands of youth across Canada with mental health literacy, peer support, and help-seeking resources.",
+    "key_strengths": [
+      "Youth-led program design and delivery",
+      "Strong digital and in-person engagement strategy",
+      "Culturally-relevant Indigenous programming",
+      "Comprehensive school and community partnerships",
+      "Blended approach combining education, community-building, and advocacy"
+    ],
+    "areas_for_development": [
+      "Launch of public policy advocacy work planned for upcoming year",
+      "Continued expansion of culturally-specific programming",
+      "Enhanced long-term outcome measurement"
+    ],
+    "sector_positioning": "Leading national organization in youth-led mental health programming with innovative peer support models and strong digital presence",
+    "conclusion": "Highly effective organization with strong impact metrics, sound financial management, and significant scaling achievements over 15 years"
+  },
+  "recommendations": [
+    "Develop additional metrics for measuring long-term outcomes of youth participants",
+    "Expand Indigenous youth programming to more communities",
+    "Accelerate planned policy advocacy work to address systemic barriers"
+  ],
+  "financials": {
+    "revenue": 9264531,
+    "expenditures": 8704921,
+    "program_expenses_pct": 65.8,
+    "fundraising_pct": 23.8,
+    "admin_pct": 10.4,
+    "surplus": 559610,
+    "funding_sources": {
+      "institutional": 53.6,
+      "individual": 24.8,
+      "government": 16.6,
+      "other": 5.0
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+"organization_name": "Jack.org",
+"sector": "Youth Mental Health",
+"sdg_alignment": ["SDG 3: Good Health and Well-being", "SDG 4: Quality Education", "SDG 10: Reduced Inequalities"],
+"region": "Canada (National)",
+"year_established": 2010,
+"contact_info": "243 College Street, Suite 200, Toronto, ON, M5T 1R5, (416) 425-2494, hello@jack.org",
+"website": "jack.org",
+"best_contact": {
+"name": "Vivien Glencross",
+"email": "hello@jack.org",
+"role": "Acting President & CEO"
+},
+"impact_iq_score": 84,
+"grade": "B+",
+"reporting_quality": 17,
+"reach": 18,
+"est_social_roi": 16,
+"outcome_effectiveness": 17,
+"transparency_governance": 16,
+"verification_level": "Self-Reported",
+"methodology_source": "Jack.org 2024 Impact Report",
+"methodology_summary": "Jack.org measures impact through quantitative program reach metrics, participant feedback surveys, and qualitative testimonials. They track engagement across their three core programs (Jack Talks, Jack Chapters, Be There) and measure both immediate outputs (number of participants) and outcomes (knowledge gained, confidence in skills, behavior change). The organization also collects stories that demonstrate impact at the individual level, providing context to their quantitative data.",
+"reports_documents_used": [
+{"file_name": "Jack-final-AnnualmpactReport2024_UDPATED.pdf", "type": "Annual Impact Report", "date": "2024"}
+],
+"key_statistics_kpis": "- Over 24,500 people earned their Be There Certificate\n- More than 26,000 people reached by Jack Talks\n- 161 Jack.org Chapters across Canada\n- 2,200 youth leaders engaged\n- 539 community initiatives implemented\n- 400+ Jack Talks delivered\n- 963 Jack Ride participants raised over $1.6 million\n- 95% of participants felt more confident in recognizing when someone is struggling\n- 80% of participants used their skills to help a peer in need\n- 92% of young people felt proud of the support they provided after completing programs\n- 10,000+ educators explored the Educator Hub resources",
+"key_insights_about_org": "Jack.org demonstrates strong youth-led programming that effectively builds mental health literacy and peer support networks across Canada. Their expansion into culturally-specific programming for Indigenous youth and newcomers shows commitment to equity and inclusion. The organization has established a clear theory of change centered on youth empowerment and stigma reduction, with programming that spans education, community building, and emerging policy advocacy. Areas for potential improvement include more rigorous impact measurement methodologies, increased third-party verification of outcomes, and expanded partnerships to scale their reach further. Their 15-year history shows consistent growth and adaptation to emerging youth mental health needs.",
+"programs": [
+{
+"name": "Jack Talks",
+"people_reached": 26000,
+"social_roi": 17,
+"score": "High",
+"effectiveness": "94% of participants found their experience valuable; 72% reported walking away with new skills",
+"sdgs": ["SDG 3", "SDG 4"]
+},
+{
+"name": "Jack Chapters",
+"people_reached": 120000,
+"social_roi": 16,
+"score": "High",
+"effectiveness": "83% felt more connected to communities; 75% reported increased wellness and belonging",
+"sdgs": ["SDG 3", "SDG 10", "SDG 11"]
+},
+{
+"name": "Be There Certificate",
+"people_reached": 24500,
+"social_roi": 15,
+"score": "High",
+"effectiveness": "90% felt more empowered to take care of their own mental health",
+"sdgs": ["SDG 3", "SDG 4"]
+},
+{
+"name": "Educator Hub",
+"people_reached": 10000,
+"social_roi": 14,
+"score": "Medium-High",
+"effectiveness": "Recently launched; effectiveness metrics still emerging",
+"sdgs": ["SDG 3", "SDG 4"]
+},
+{
+"name": "Indigenous Youth Programming",
+"people_reached": null,
+"social_roi": 15,
+"score": "High",
+"effectiveness": "40 Jack Talks delivered specifically for Indigenous youth; qualitative testimonials show strong cultural relevance",
+"sdgs": ["SDG 3", "SDG 10"]
+}
+],
+"key_target_members_partners": [
+{"name": "Canadian Feed The Children", "type": "Program Partner", "role": "Collaboration on Indigenous youth programming"},
+{"name": "Pinterest", "type": "Lead Jack Chapters Partner", "role": "Supporting the Jack Chapters program"},
+{"name": "Five Now Foundation for Medical Advancements", "type": "Transformational Partner", "role": "Major funding support"},
+{"name": "McDonald Family", "type": "Major Donor", "role": "$50,000+ financial support"},
+{"name": "Government of Canada (Canada Summer Jobs)", "type": "Government Partner", "role": "Program funding support"},
+{"name": "Michel Bergeron & Suzie Cho", "type": "Board Leadership", "role": "Board Co-Chairs providing governance"}
+],
+"admin_notes": "Jack.org is celebrating its 15th anniversary in 2024 and has recently implemented a new strategic plan focused on three pillars: informing/normalizing/educating youth about mental health; building communities of belonging and support; and developing public policy advocacy initiatives. The organization has strong youth representation in its governance model with Youth Network Advisors on the board. Total revenue for FY2024 was $9,264,531 with expenditures of $8,704,921 (65.8% on programs, 23.8% on fundraising, 10.4% on administration)."
+}
+Impact Analysis: Jack.org
+Executive Summary
+Jack.org stands as a leading Canadian mental health charity focusing on youth empowerment and mental health literacy. With 15 years of operation, the organization has developed a robust ecosystem of complementary programs that reach youth across Canada through peer-to-peer education, community building, and digital resources. Based on our analysis, Jack.org receives an Impact IQ Score of 84/100 (Grade: B+), demonstrating strong performance across most dimensions while showing room for growth in certain areas of impact measurement and verification.
+The organization demonstrates particular strength in its reach and reporting quality, with a clearly articulated theory of change that places youth leadership at the center of mental health transformation. Their strategic expansion into culturally-tailored programming for Indigenous youth and newcomers to Canada demonstrates a commitment to equity that aligns with evolving best practices in the mental health field.
+Key Strengths
+
+Youth-Led Approach: Jack.org's model of empowering young leaders to drive mental health conversations creates authentic engagement and sustainable community impacts.
+Program Complementarity: The three core programs (Jack Talks, Jack Chapters, Be There) work together to address mental health literacy, support skills, and community building in a comprehensive way.
+Evolution & Adaptation: The organization shows a pattern of thoughtful evolution, most recently demonstrated by the launch of the Educator Hub and culturally-specific programming for Indigenous youth.
+Strong Participant Outcomes: Feedback data consistently shows high satisfaction rates and, more importantly, behavior change among participants (80% report using their skills to help peers in need).
+Diversified Funding Base: The organization maintains a healthy mix of institutional funding (53.6%), individual donations (24.8%), government support (16.6%), and other revenue (5%).
+
+Areas for Development
+
+Impact Measurement Methodology: While Jack.org collects robust output data, there are opportunities to strengthen outcome measurement through more longitudinal studies and third-party verification.
+Expanding Verification Practices: Moving beyond self-reported data to incorporate more validated assessment tools would strengthen impact claims.
+Scaling Strategy: The demand for services appears to outpace capacity, suggesting the need for strategic partnerships to extend reach more efficiently.
+Policy Advocacy Metrics: As the organization moves into public policy advocacy, developing clear metrics to evaluate systems-level change will be important.
+
+Program Analysis
+Jack Talks
+Jack Talks reaches approximately 26,000 youth annually through peer-led presentations that normalize mental health conversations. With 94% of participants finding value in the experience and 72% reporting gaining new skills, this program demonstrates strong effectiveness. The recent expansion to include specialized Talks for Indigenous youth shows adaptability to diverse community needs.
+Jack Chapters
+With 161 chapters across Canada engaging 2,200 youth leaders and reaching an estimated 120,000 peers through 539 initiatives, this program creates impressive scale. The community-building aspect shows particular strength, with 83% of participants reporting increased connection and 75% noting improved wellness and belonging.
+Be There Certificate
+This digital resource has reached over 24,500 people, teaching concrete skills for supporting peers experiencing mental health challenges. With 90% of participants reporting increased empowerment in managing their own mental health, this program effectively combines self-care with peer support capabilities.
+Educator Hub
+As a newly launched initiative reaching 10,000+ educators, this program shows promise for multiplying impact by equipping teachers to integrate mental health education into classroom settings. While effectiveness metrics are still emerging, this strategic pivot to influence educational systems could significantly extend reach.
+Financial Analysis
+Jack.org demonstrates sound financial management with a slight revenue surplus ($559,610) for FY2024. Program expenses represent 65.8% of total expenditures, with fundraising at 23.8% and administration at 10.4% - ratios that align with sector standards for growing organizations. The diversified funding base provides stability, with institutional contributions representing the largest source (53.6%).
+Recommendations for Increasing Impact
+
+Strengthen Impact Measurement: Implement randomized controlled trials or quasi-experimental designs to better isolate program effects on mental health outcomes.
+Expand Partner Ecosystem: Develop more structured partnerships with educational institutions, healthcare providers, and community organizations to extend reach.
+Increase Verification Rigor: Pursue third-party verification of key impact metrics to move from "Self-Reported" to "Verified" status.
+Deepen Indigenous Programming: Build on early success with Indigenous youth programming by developing Indigenous-led governance structures for these initiatives.
+Develop Educator Effectiveness Metrics: Create robust evaluation frameworks for the new Educator Hub to measure classroom-level impacts.
+
+Sector Positioning
+Based on this organization's Impact IQ score of 84 (B+), Jack.org would likely rank among the Top 15% of youth mental health organizations in Canada. Their youth-led model, nationwide reach, and continuous evolution of programming distinguish them from many peer organizations. Their focus on prevention and early intervention through peer support represents an important complement to clinical mental health services.
+The organization's expansion into culturally-specific programming and policy advocacy indicates a maturing approach that aligns with leading practices in the mental health sector. With 15 years of experience and strong community credibility, Jack.org is well-positioned to influence both practice and policy in youth mental health across Canada.
+Conclusion
+Jack.org demonstrates strong impact through its youth-centered approach to mental health promotion. Their core strategy of empowering young people as agents of change creates sustainable community impacts while building leadership capacity. With a B+ Impact IQ grade, the organization shows impressive results across multiple dimensions while maintaining room for growth, particularly in impact measurement methodology and verification practices.
+The organization's commitment to reaching diverse communities, particularly Indigenous youth, reflects an evolving understanding of mental health equity. As Jack.org continues to implement its new strategic plan, strengthening impact measurement frameworks and pursuing more structured verification would further enhance their already substantial contributions to youth mental health in Canada.

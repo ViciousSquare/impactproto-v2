@@ -1,0 +1,101 @@
+Develop a comprehensive Admin Dashboard and Member Dashboard for the Basic Impacts platform. The system should support efficient organization onboarding, data enrichment, easy profile creation from AI-generated summaries, and value-driven member engagement and value.
+
+ADMIN DASHBOARD: Core Features & Workflow
+1. Organization Management
+* Add/Invite Organizations:
+    * Manual add  (single org form)
+    * Bulk import (CSV/JSON upload with custom field mapping)
+    * Ability to generate and manage unique profile links
+* Recommendation Engine:
+    * Generate lists of top, high-potential, or under-reported organizations to add, based on public data, sector trends, and regional gaps.
+* Manual Data Input:
+    * Admin can paste a single AI-generated JSON (from Claude or similar) into a “smart input” box.
+    * Backend Parsing:
+        * Parse JSON to auto-populate all relevant profile fields:
+            * 
+* SAMPLE JSON STRUCTURE FOR ORGANIZATION PROFILE
+* Use these for the Json data extraction: 
+* 
+* Organization Name: [__________]
+* Sector: [Dropdown]
+* SDG Alignment: [Multi-select]
+* Region: [Dropdown]
+* Year Established: [____]
+* Contact Info: [__________]
+* Website: [__________]
+* Bdst Contact to share profile with:  [_____]
+* 
+* --- Impact IQ & Methodology ---
+* Impact IQ Score: [____]
+* Grade: [__]
+* Reporting Quality: [__]/20
+* Reach: [__]/20
+* Est. Social ROI: [__]/20
+* Outcome Effectiveness: [__]/20
+* Transparency & Governance: [__]/20
+* Verification Level: [(: Self-Reported, Verified, Audited)]
+* Methodology Source: [__________]
+* Methodology Summary: [Textarea]
+* Reports/ Documents Used: [File name, type and date ]
+* 
+* --- Insights & Metrics ---
+* Key Statistics/ KPIs: [Textarea or Table]
+* Key Insights and actionable Recommendations about Org: [___]
+* Programs: [Add Multiple]
+* Key Target Members/Partners: [Add Multiple]
+* 
+* Admin Notes: [Textarea]
+* [Save] [Cancel]
+* 
+* 
+* 
+        * Show a preview for admin review/edit before saving.
+        * On save, store data and generate a shareable profile link.
+
+4. Services, Tools & Recommendations
+* Offer Services:
+    * Recommend insights, actions,improvement tools,  verification, audits, and badges (Verification Packages, Third-Party Audits, etc.) to organizations.
+* Push Notifications:
+    * Send updates both via email and in-platform notifications.
+5. Analytics & Activity Tracking
+* Dashboard:
+    * Real-time stats: pending invites, approval pipeline, email engagement, recent admin actions.
+* Activity Logging:
+    * Log all admin actions with timestamps for compliance.
+6. Workflow Automation
+* Drag-and-Drop Workflow Builder:
+    * Allow admins to automate actions (e.g., “When report uploaded, parse and notify reviewer”).
+    * Support conditional logic and custom workflows.
+* 
+MEMBER DASHBOARD: Core Features & Engagement
+1. Profile Management
+* Editable Org Profile:
+    * Manage mission, vision, contact info, impact metrics, programs, and documents.
+    * Upload reports and supplementary materials.
+    * View and request verification status.
+2. Value-Added Engagement
+* Competitive Rankings:
+    * Show organization’s position by sector, region, and SDG.
+* Actionable Recommendations:
+    * Provide tips and actions to improve Impact IQ score and transparency.
+* Connection Suggestions:
+    * Suggest partners, funders, advisors, programs, or potential members based on profile/activity.
+* Resource Library:
+    * Access guides, templates, and best practices tailored to sector and SDGs.
+
+3. Notifications & Updates
+* Profile Updates:
+    * Notify members of ranking changes, verification status, and new opportunities.
+
+ENHANCEMENTS & MISSING LINKS
+* Field Validation: Ensure robust error handling for JSON parsing and data input.
+* Preview/Edit: Always show a preview screen before final save.
+* Deduplication: Prevent duplicate organizations or contacts.
+* Audit Trail: Keep a log of all changes for compliance.
+* Custom Field Mapping: Allow admins to map fields during bulk import.
+* Individual/Advisor Profiles: Allow individuals to create profiles, connect, and apply for advisory roles.
+* Onboarding Guides: Step-by-step instructions for new organizations and individuals.
+* Visual Methodology Summaries: Add infographics or diagrams for methodology and verification levels.
+
+FINAL INSTRUCTION
+Build the Basic Impacts admin and member dashboards with all the features, flows, and best practices above. Prioritize automation, ease of use, and value delivery for both admins and organizations. Ensure robust parsing, error handling, and preview steps for AI-generated profile creation.

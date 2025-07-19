@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  
+  /* Primary color - now indigo */
+  --primary: 240 69% 60%;
+  --primary-50: 240 69% 97%;
+  --primary-100: 240 69% 94%;
+  --primary-200: 240 69% 87%;
+  --primary-300: 240 69% 74%;
+  --primary-400: 240 69% 64%;
+  --primary-500: 240 69% 54%;
+  --primary-600: 240 69% 44%;
+  --primary-700: 240 69% 34%;
+  --primary-800: 240 69% 24%;
+  --primary-900: 240 69% 14%;
+  --primary-foreground: 211 100% 99%;
+  
+  /* Secondary/neutral colors - now more vibrant purple */
+  --secondary: 270 65% 60%;
+  --secondary-50: 270 65% 97%;
+  --secondary-100: 270 65% 94%;
+  --secondary-200: 270 65% 87%;
+  --secondary-300: 270 65% 74%;
+  --secondary-400: 270 65% 64%;
+  --secondary-500: 270 65% 54%;
+  --secondary-600: 270 65% 44%;
+  --secondary-700: 270 65% 34%;
+  --secondary-800: 270 65% 24%;
+  --secondary-900: 270 65% 14%;
+  --secondary-foreground: 0 0% 100%;
+  
+  /* Accent color - now vibrant pink */
+  --accent: 335 80% 60%;
+  --accent-50: 335 80% 97%;
+  --accent-100: 335 80% 94%;
+  --accent-200: 335 80% 87%;
+  --accent-300: 335 80% 74%;
+  --accent-400: 335 80% 64%;
+  --accent-500: 335 80% 54%;
+  --accent-600: 335 80% 44%;
+  --accent-700: 335 80% 34%;
+  --accent-800: 335 80% 24%;
+  --accent-900: 335 80% 14%;
+  --accent-foreground: 0 0% 100%;
+  
+  /* Additional accent colors */
+  --accent-orange: 30 100% 50%;
+  --accent-teal: 175 84% 32%;
+  --accent-emerald: 152 81% 42%;
+  --accent-purple: 270 65% 60%;
+  --accent-pink: 335 80% 60%;
+  --accent-indigo: 240 69% 60%;
+  
+  /* Status colors - more vibrant */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --success: 142 84% 45%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 95% 54%;
+  --warning-foreground: 0 0% 0%;
+  --info: 199 95% 52%;
+  --info-foreground: 0 0% 100%;
+  
+  --ring: 240 69% 60%;
+  --radius: 0.5rem;
+  
+  /* Chart colors - more vibrant */
+  --chart-1: 240 69% 60%; /* indigo */
+  --chart-2: 270 65% 60%; /* purple */
+  --chart-3: 335 80% 60%; /* pink */
+  --chart-4: 152 81% 42%; /* emerald */
+  --chart-5: 175 84% 32%; /* teal */
+}
+
+.dark {
+  --background: 240 12% 8%;
+  --foreground: 0 0% 98%;
+  --muted: 240 5% 18%;
+  --muted-foreground: 240 5% 70%;
+  --popover: 240 12% 8%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 12% 12%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 5% 20%;
+  --input: 240 5% 20%;
+  
+  /* Primary color - darker but still vibrant indigo */
+  --primary: 240 69% 54%;
+  --primary-50: 240 69% 15%;
+  --primary-100: 240 69% 20%;
+  --primary-200: 240 69% 25%;
+  --primary-300: 240 69% 30%;
+  --primary-400: 240 69% 40%;
+  --primary-500: 240 69% 50%;
+  --primary-600: 240 69% 60%;
+  --primary-700: 240 69% 70%;
+  --primary-800: 240 69% 80%;
+  --primary-900: 240 69% 90%;
+  --primary-foreground: 0 0% 100%;
+  
+  /* Secondary color - darker but still vibrant purple */
+  --secondary: 270 65% 45%;
+  --secondary-foreground: 0 0% 98%;
+  
+  /* Accent color - darker but still vibrant pink */
+  --accent: 335 80% 45%;
+  --accent-foreground: 0 0% 98%;
+  
+  /* Status colors */
+  --destructive: 0 70% 40%;
+  --destructive-foreground: 0 0% 98%;
+  --success: 142 70% 35%;
+  --success-foreground: 0 0% 98%;
+  --warning: 38 90% 45%;
+  --warning-foreground: 0 0% 98%;
+  --info: 199 80% 40%;
+  --info-foreground: 0 0% 98%;
+  
+  --ring: 240 69% 54%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased bg-gradient-to-br from-amber-50/30 via-white to-teal-50/30 text-[#262626] font-sans min-h-screen;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold;
+  }
+  
+  /* For accessibility - focus states */
+  *:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-indigo-500;
+  }
+  
+  /* For scrollbar styling */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-amber-50/50;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-amber-400 to-orange-400 rounded-lg;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-amber-500 to-orange-500;
+  }
+}
+
+@layer components {
+  /* Table hover styles */
+  .table-row-hover:hover {
+    @apply bg-indigo-50;
+  }
+  
+  /* Badge styles */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply bg-emerald-500 text-white;
+  }
+  
+  .badge-info {
+    @apply bg-indigo-500 text-white;
+  }
+  
+  .badge-warning {
+    @apply bg-amber-500 text-white;
+  }
+  
+  .badge-error {
+    @apply bg-rose-500 text-white;
+  }
+
+  /* Warm card styles */
+  .card-gradient {
+    @apply relative overflow-hidden shadow-lg;
+  }
+
+  .card-gradient-primary {
+    @apply bg-gradient-to-br from-amber-50 to-white border-amber-100;
+  }
+
+  .card-gradient-secondary {
+    @apply bg-gradient-to-br from-orange-50 to-white border-orange-100;
+  }
+
+  .card-gradient-accent {
+    @apply bg-gradient-to-br from-teal-50 to-white border-teal-100;
+  }
+
+  .card-gradient-success {
+    @apply bg-gradient-to-br from-emerald-50 to-white border-emerald-100;
+  }
+
+  /* Warm button styles */
+  .btn-gradient {
+    @apply relative overflow-hidden transition-all duration-300 text-white font-medium shadow-md hover:shadow-lg active:shadow-sm;
+  }
+
+  .btn-gradient-primary {
+    @apply bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400;
+  }
+  
+  .btn-gradient-secondary {
+    @apply bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-400;
+  }
+  
+  .btn-gradient-accent {
+    @apply bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-500 hover:to-teal-400;
+  }
+
+  /* Warm heading gradient text */
+  .gradient-heading {
+    @apply font-bold bg-clip-text text-transparent;
+  }
+
+  .gradient-heading-primary {
+    @apply bg-gradient-to-r from-amber-700 to-amber-500;
+  }
+
+  .gradient-heading-secondary {
+    @apply bg-gradient-to-r from-orange-700 to-orange-500;
+  }
+  
+  .gradient-heading-accent {
+    @apply bg-gradient-to-r from-teal-700 to-teal-500;
+  }
+  
+  .gradient-heading-rainbow {
+    @apply bg-gradient-to-r from-amber-600 via-orange-600 to-teal-600;
+  }
+
+  /* Section dividers */
+  .divider-gradient {
+    @apply h-1 rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-teal-500;
+  }
+
+  /* Animation for ticker */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+  
+  /* Animation for pulsing */
+  @keyframes pulse-soft {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+  
+  .animate-pulse-soft {
+    animation: pulse-soft 3s ease-in-out infinite;
+  }
+  
+  /* Animation for shimmer effect */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .animate-shimmer {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  
+  /* Animation for slow pulsing elements */
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.15;
+    }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  /* Glow shadow effects */
+  .shadow-glow-sm {
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.1);
+  }
+  
+  .shadow-glow-amber {
+    box-shadow: 0 0 20px 2px rgba(245, 158, 11, 0.2);
+  }
+  
+  .shadow-glow-orange {
+    box-shadow: 0 0 20px 2px rgba(249, 115, 22, 0.2);
+  }
+  
+  .shadow-glow-teal {
+    box-shadow: 0 0 20px 2px rgba(20, 184, 166, 0.2);
+  }
+}

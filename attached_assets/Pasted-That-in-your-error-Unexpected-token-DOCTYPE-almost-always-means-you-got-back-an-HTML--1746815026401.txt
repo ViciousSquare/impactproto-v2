@@ -1,0 +1,65 @@
+That < in your error (Unexpected token '<', "<!DOCTYPE "…) almost always means you got back an HTML page (often an error page or a “please sign in” landing page) instead of pure JSON. Here’s a checklist and some patterns to fix it:
+
+1. Make sure you’re calling the correct API endpoint
+💡 If you hit your web app’s root URL (e.g. https://your-app.com/) it will serve your frontend HTML, not the JSON API.
+
+✔️ Double-check your fetch/WebClient code is pointing at your JSON endpoint, e.g.
+
+js
+Copy
+fetch('https://your-app.com/api/organizations/parse', {
+  headers: { 'Accept': 'application/json' }
+})
+2. Force JSON responses on your AI side (Claude)
+If you’re using Claude or any LLM, prime it to output only the JSON object—no narration, no code fences, no extra HTML. For example, your system or user prompt should include:
+
+“You must respond with exactly valid JSON matching this schema. Do not include any extra text, markdown, or HTML.”
+
+3. Inspect the raw response before parsing
+Wrap your parse call in a try/catch and log response.text() so you can see exactly what landed back:
+
+js
+Copy
+const res = await fetch(url, { ... });
+const text = await res.text();
+console.log('RAW RESPONSE:', text);
+try {
+  const data = JSON.parse(text);
+  // …use data…
+} catch (e) {
+  console.error('JSON parse failed:', e);
+}
+That log will show you whether you’re getting an HTML error page, a rate-limit page, or something else.
+
+4. Ensure your server sets the right headers
+On your API route that emits JSON, verify you have:
+
+python
+Copy
+# Example in Flask/FastAPI
+from fastapi import FastAPI
+from fastapi.responses import JSONResponse
+
+@app.post('/api/organizations/parse')
+def parse_org(payload: dict):
+    result = do_parsing(payload)
+    return JSONResponse(content=result, media_type='application/json')
+Or in Express.js:
+
+js
+Copy
+app.post('/api/organizations/parse', (req, res) => {
+  const parsed = parseJsonPayload(req.body);
+  res.setHeader('Content-Type', 'application/json');
+  res.json(parsed);
+});
+5. Strip out any HTML wrappers in a pinch
+If you absolutely must and you know the JSON is embedded in HTML, you can extract the JSON substring before parsing:
+
+js
+Copy
+// naive but sometimes helpful
+const jsonStart = text.indexOf('{');
+const jsonEnd   = text.lastIndexOf('}');
+const maybeJson = text.slice(jsonStart, jsonEnd + 1);
+const data      = JSON.parse(maybeJson);

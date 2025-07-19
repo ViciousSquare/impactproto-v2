@@ -1,0 +1,208 @@
+You are an expert AI product architect and full-stack development team. Build “Basic Impacts,” a next-generation, Canada-first impact accountability and benchmarking platform for the non-profit, corporate, and government sectors. This platform must set a new global standard for transparency, usability, and data-driven social impact measurement.
+
+1. Platform Overview
+Purpose:
+Enable the public, funders, and organizations to discover, compare, and validate the real-world impact of Canadian organizations and their programs, combatting greenwashing and impact washing.
+
+Core Modules:
+
+Impact Exchange (Front-End): Public dashboards, leaderboards, solution finder, and organization/program profiles.
+
+Impact Engine (Back-End): Automated document ingestion, NLP-powered report parsing, metric extraction, scoring engine, and analytics API.
+
+2. Front-End: Impact Exchange
+Public Leaderboard:
+
+Real-time, sortable tables of top organizations and programs by sector, region, SDG alignment, and trending status.
+
+“Impact IQ” composite scores, grading badges (A–F), and verification icons (self-reported, document-verified, third-party audited).
+
+Stock-market style tickers for fast risers and trending declines.
+
+Organization & Program Profiles:
+
+Logo, mission, funding received, impact score, reporting grade.
+
+Drill-down analytics: sub-scores (Reporting Quality, Reach, Social ROI, Outcome Effectiveness, Transparency & Governance).
+
+Timeline of impact and reporting history.
+
+Solution Finder:
+
+Search by need/problem (e.g., “food security,” “mental health”).
+
+Filter by demographic, region, SDG, or solution type.
+
+Peer reviews, testimonials, and public voting for “Community Choice” awards.
+
+“Share Your Solution” feature for organizations to post needs and offerings.
+
+Self-Service Portal:
+
+For organizations to claim profiles, upload reports, update data, and respond to public feedback.
+
+Verified badge system (e.g., “Transparency Champion,” “Third-Party Audited”).
+
+Design & Accessibility:
+
+Clean, data-driven UI (React/Next.js + Tailwind CSS), mobile-first, bilingual (EN/FR), WCAG 2.1 AA compliance.
+
+Interactive charts (D3.js or Recharts), heatmaps, and time-series graphs.
+
+3. Back-End: Impact Engine
+Document Ingestion & NLP Analysis:
+
+Bulk and manual upload of annual, financial, and impact reports (PDF, Word, Excel).
+
+Automated parsing using spaCy, AWS Textract, or similar for extracting numeric and narrative metrics, SDG tags, and outcome statements.
+
+AI validation to flag discrepancies (e.g., claimed vs. verified beneficiaries, missing data).
+
+Data Management & Scheduling:
+
+Relational DB (PostgreSQL/TimescaleDB) for storing organizations, programs, reports, metrics, and metadata.
+
+Metadata repository: sector, region, report date, funding sources, SDG alignment.
+
+Automated monthly re-indexing and analytics refresh (Celery or similar scheduler).
+
+Analytics & Visualization API:
+
+RESTful endpoints for all front-end queries (leaderboards, profiles, solution finder, trends).
+
+Graphing service for time-series and comparative charts.
+
+Admin tools for flagging, review, and approval of organization submissions.
+
+4. Metrics & Scoring Model
+Core Quantitative Metrics:
+
+People Reached (unique beneficiaries)
+
+Social ROI (CAD value created per $1 invested)
+
+Cost Savings (aggregate $ saved in health, education, food, housing)
+
+Cost per Impact (e.g., $ per child educated)
+
+Program Scalability (% growth YoY)
+
+Replication Rate (regions/countries adopted)
+
+Funding Allocation (% to programs vs. overhead)
+
+Outcome & Effectiveness Metrics:
+
+Outcome Improvement (% change in key indicators: literacy, employment, health)
+
+Sustainability Alignment (mapping to UN SDGs)
+
+Longitudinal Outcomes (% beneficiaries sustained out of poverty after 5 years)
+
+Accountability & Transparency Metrics:
+
+Transparency Score (frequency/quality of public reports, third-party audits)
+
+Report Completeness (% required fields populated)
+
+Timeliness (days from fiscal year end to report upload)
+
+Data Quality Score (anomaly/missing value detection)
+
+Qualitative Metrics:
+
+Beneficiary testimonials (structured surveys, interviews)
+
+Partner/community ratings (trust, cultural sensitivity)
+
+Innovation & Collaboration (unique solutions, partnerships)
+
+Composite “Impact IQ” Score:
+
+Weighted aggregation of sub-scores:
+
+Reporting Quality (20%)
+
+Reach (20%)
+
+Social ROI (20%)
+
+Outcome Effectiveness (20%)
+
+Transparency & Governance (20%)
+
+Allow drill-down into each sub-score and display historical trends.
+
+5. Additional Features & Recommendations
+Gamification:
+
+Badges for organizations (e.g., “Transparency Champion”)
+
+Public voting for “Community Choice” awards
+
+Compliance & Security:
+
+Secure authentication (OAuth 2.0), role-based access, PIPEDA-compliant data handling
+
+API compatibility with third-party auditors (e.g., Charity Intelligence Canada)
+
+Collaboration Hub:
+
+“Match with Innovators” button for NGOs/corporates to co-develop solutions.
+
+Monetization:
+
+Premium profiles, featured listings, grants for top solutions, municipal/corporate subscriptions.
+
+6. Technical Stack
+Front-End:
+
+TypeScript, React/Next.js, Tailwind CSS, Recharts/D3.js
+
+Back-End:
+
+Python, Flask or FastAPI, Celery, spaCy, AWS Textract
+
+Database:
+
+PostgreSQL, TimescaleDB for time-series data
+
+Deployment:
+
+Docker, Kubernetes, CI/CD with GitHub Actions
+
+Accessibility & Localization:
+
+WCAG 2.1 AA, bilingual (EN/FR)
+
+7. AI-Development Prompt (Ready to Use)
+text
+Build “Basic Impacts,” a two-module web platform for impact accountability and benchmarking in Canada.
+
+**Front-End (“Impact Exchange”):**
+- Public leaderboards of organizations/programs with sortable/filterable metrics (Impact IQ, Social ROI, Transparency).
+- Organization/program profiles with badges, sub-scores, and historical analytics.
+- Solution Finder: search by need, region, SDG; peer reviews; public voting.
+- Self-service portal for organizations (profile management, report upload, feedback response).
+- Interactive charts (Recharts/D3.js), mobile-first, bilingual, WCAG 2.1 AA.
+
+**Back-End (“Impact Engine”):**
+- Bulk/manual document ingestion (PDF, Word, Excel).
+- AI/NLP pipeline (spaCy, AWS Textract) to extract and validate metrics from reports.
+- Relational DB (PostgreSQL/TimescaleDB) for all metadata, metrics, and reports.
+- Scheduled analytics (Celery) for monthly re-indexing and trend updates.
+- REST API for all front-end queries.
+- Admin tools for metric flagging, submission approval, compliance tracking.
+
+**Metrics & Scoring:**
+- Core: People Reached, Social ROI, Cost Savings, Cost per Impact, Program Scalability, Replication Rate, Funding Allocation.
+- Outcome: % improvement in key indicators, SDG alignment, longitudinal outcomes.
+- Accountability: Transparency score, report completeness, timeliness, data quality.
+- Qualitative: Testimonials, partner/community ratings, innovation/collaboration.
+- Composite “Impact IQ” score: weighted sub-scores (Reporting Quality, Reach, ROI, Outcome, Transparency).
+
+**Other:**
+- Gamification (badges, public voting), compliance (PIPEDA), secure auth (OAuth 2.0), API compatibility with third-party auditors.
+- Monetization: premium profiles, featured listings, municipal/corporate subscriptions.
+
+Prioritize user-friendliness, robust data validation, and public trust. Ensure all features are scalable, secure, and accessible.
